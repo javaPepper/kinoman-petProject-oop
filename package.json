@@ -1,0 +1,42 @@
+{
+  "name": "cinemaddict",
+  "version": "0.0.1",
+  "private": true,
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not < 0.25%"
+  ],
+  "scripts": {
+    "lint": "eslint src/",
+    "tsc": "tsc",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "8.13.0",
+    "eslint-config-htmlacademy": "5.1.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.2"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "webpack-dev-server": "^4.13.3"
+  }
+}
